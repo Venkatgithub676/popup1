@@ -1,0 +1,18 @@
+/* Write your CSS here */
+
+.nav-con {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 20px;
+}
+.website-logo {
+  width: 200px;
+  height: 200px;
+}
+.hamburger-menu {
+  width: 120px;
+  height: 50px;
+}
