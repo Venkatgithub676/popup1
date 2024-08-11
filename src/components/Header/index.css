@@ -12,7 +12,54 @@
   width: 200px;
   height: 200px;
 }
+.ham-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 .hamburger-menu {
   width: 120px;
+
   height: 50px;
+}
+
+.popup-con {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.close-btn-con {
+  width: 1300px;
+}
+.close-con {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  padding: 20px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.header-about-home-con {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-con {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.icons {
+  font-size: 50px;
+}
+.name {
+  margin-left: 10px;
+  font-family: 'Roboto';
+  font-size: 30px;
 }
