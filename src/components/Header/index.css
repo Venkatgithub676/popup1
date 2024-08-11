@@ -8,9 +8,12 @@
   height: 80px;
   padding: 20px;
 }
+.logo-link-con {
+  text-decoration: none;
+}
 .website-logo {
-  width: 200px;
-  height: 200px;
+  width: 80px;
+  height: 80px;
 }
 .ham-btn {
   background-color: transparent;
@@ -29,15 +32,13 @@
 }
 
 .close-btn-con {
-  width: 1300px;
 }
 .close-con {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-
+  width: 1300px;
   padding: 20px;
-  width: 100%;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -48,6 +49,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  list-style-type: none;
 }
 
 .link-con {

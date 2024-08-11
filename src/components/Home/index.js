@@ -7,7 +7,7 @@ const Home = () => (
   <div className="home-con">
     <Header />
     <img
-      alt=""
+      alt="home"
       className="home-img"
       src="https://assets.ccbp.in/frontend/react-js/home-lg-img.png"
     />

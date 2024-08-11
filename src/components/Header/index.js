@@ -14,41 +14,52 @@ const Header = () => {
   }
   return (
     <nav className="nav-con">
-      <img
-        src="https://assets.ccbp.in/frontend/react-js/hamburger-menu-website-logo.png"
-        alt="website logo"
-        className="websiite-logo"
-      />
+      <Link to="/" className="logo-link-con">
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/hamburger-menu-website-logo.png"
+          alt="website logo"
+          className="website-logo"
+        />
+      </Link>
       <Popup
         modal
         overlayStyle={styles}
+        className="popup-content"
         trigger={
-          <button type="button" className="ham-btn">
+          <button
+            data-testid="hamburgerIconButton"
+            type="button"
+            className="ham-btn"
+          >
             <GiHamburgerMenu className="hamburger-menu" alt="ham-btn" />
           </button>
         }
       >
         {close => (
           <>
-            <div className="close-btn-con">
-              <button type="button" className="close-con">
-                <IoMdClose
-                  alt="close-btn"
-                  onClick={() => close()}
-                  className="icons"
-                />
-              </button>
-            </div>
-            <div className="header-about-home-con">
-              <Link to="/" className="link-con">
-                <AiFillHome className="icons" />
-                <h1 className="name">Home</h1>
-              </Link>
-              <Link to="/about" className="link-con">
-                <BsInfoCircleFill className="icons" />
-                <h1 className="name">About</h1>
-              </Link>
-            </div>
+            <button
+              type="button"
+              data-testid="closeButton"
+              className="close-con"
+              onClick={() => close()}
+            >
+              <IoMdClose alt="close-btn" className="icons" />
+            </button>
+
+            <ul className="header-about-home-con">
+              <li>
+                <Link to="/" className="link-con">
+                  <AiFillHome className="icons" />
+                  <h1 className="name">Home</h1>
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="link-con">
+                  <BsInfoCircleFill className="icons" />
+                  <h1 className="name">About</h1>
+                </Link>
+              </li>
+            </ul>
           </>
         )}
       </Popup>

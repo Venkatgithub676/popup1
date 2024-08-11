@@ -9,7 +9,7 @@ const About = () => (
   <div className="home-con">
     <Header />
     <img
-      alt=""
+      alt="about"
       className="home-img"
       src="https://assets.ccbp.in/frontend/react-js/about-lg-img.png"
     />
